@@ -1,14 +1,14 @@
 pipeline {
     agent any
     environment {
-        DOCKER_HUB_USER = 'aligthage'
+        DOCKER_HUB_USER = 'shreya227108'
         IMAGE_NAME = 'java-hello'
     }
 
     stages {
         stage('Clone Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/AgeCoder/java-hello.git'
+                git branch: 'main', url: 'https://github.com/shreya227108/java-hello.git'
             }
         }
 
